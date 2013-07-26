@@ -1,0 +1,46 @@
+body {
+	background-color: #e2e2e2;
+	font-family: Verdana, Arial;
+	color: #181818;
+}
+
+/* Titolo e parte per gestire il programma */
+.header {
+	width:200px;
+	height: 200px;
+	font-family: Georgia;
+	background-color: #df0000;
+	color: #e3e3e3;
+	border-radius: 3px;
+	margin: 5px;
+}
+.header * {
+	margin: 5px;
+}
+
+/* CONTENT e relativi div figli */
+.content {
+	margin: 5px;
+}
+.element {
+	width: 198px;
+	height: 150px;
+	margin: auto;
+	border:	1px dotted #bbbbbb;
+	background-color: #dddddd;
+	border-radius: 3px;
+	float: left; 
+	position: absolute;
+}
+.element input { 
+	float: left;
+	margin: 5px;
+}
+.list {
+	margin-left: 5px;
+	margin-top: 25px;
+}
+.date {
+	text-align: right;
+	font-size: 0.5em;
+}
