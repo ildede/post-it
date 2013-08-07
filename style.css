@@ -1,4 +1,7 @@
 body {
+	margin:0;
+	padding:0;
+	height:100%;
 	background-color: #e2e2e2;
 	font-family: Verdana, Arial;
 	color: #181818;
@@ -7,19 +10,19 @@ body {
 /* Titolo e parte per gestire il programma */
 .header {
 	width:200px;
-	height: 200px;
+	height: 100%;
 	font-family: Georgia;
 	background-color: #df0000;
 	color: #e3e3e3;
-	border-radius: 3px;
-	margin: 5px;
-}
-.header * {
-	margin: 5px;
+	margin: 0px;
+	padding: 0px;
+	position:absolute;
+	top:0;
+	bottom:0;
 }
 
 /* CONTENT e relativi div figli */
-.content {
+.container {
 	margin: 5px;
 }
 .element {
