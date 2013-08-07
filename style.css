@@ -20,28 +20,34 @@ body {
 	top:0;
 	bottom:0;
 }
+h1{margin:5px;}
+textarea{
+	margin:5px;
+	max-width:180px;
+}
+button{margin-left:5px;}
 
-/* CONTENT e relativi div figli */
+/* CONTAINER e relativi div figli */
 .container {
-	margin: 5px;
+	margin-left: 200px;
 }
 .element {
+	margin: 2px;
+	position:absolute;
+	top:2px;
 	width: 198px;
 	height: 150px;
-	margin: auto;
 	border:	1px dotted #bbbbbb;
 	background-color: #dddddd;
 	border-radius: 3px;
-	float: left; 
-	position: absolute;
 }
 .element input { 
 	float: left;
 	margin: 5px;
 }
-.list {
+.post {
 	margin-left: 5px;
-	margin-top: 25px;
+	margin-top: 10px;
 }
 .date {
 	text-align: right;

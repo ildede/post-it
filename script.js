@@ -8,7 +8,6 @@ function createElement(text) {
 	date = $(date).html( d.getHours()+":"+d.getMinutes()+"<br />"+d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear() );
 	newDiv= $(newDiv).append(check).append(date).append(post);
 	newDiv.draggable();
-	newDiv.resizable();
 	
 	return newDiv;
 };
