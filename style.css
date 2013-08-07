@@ -28,18 +28,18 @@ textarea{
 button{margin-left:5px;}
 
 /* CONTAINER e relativi div figli */
-.container {
-	margin-left: 200px;
+#container {
+	margin-left:200px;
+	position:relative;
 }
 .element {
-	margin: 2px;
-	position:absolute;
-	top:2px;
-	width: 198px;
-	height: 150px;
-	border:	1px dotted #bbbbbb;
 	background-color: #dddddd;
 	border-radius: 3px;
+display:inline-block;
+width:198px;
+height:150px;
+border: 1px dotted #bbbbbb;
+position:absolute;
 }
 .element input { 
 	float: left;

@@ -20,7 +20,7 @@ $(document).ready(function(){
 			var text = $('#item_to_add').val();
 			$('#item_to_add').val("");
 			var newDiv = createElement(text);
-			$('.container').append(newDiv);
+			$('#container').append(newDiv);
 		}
 	});
 	
