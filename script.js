@@ -28,5 +28,12 @@ $(document).ready(function(){
 		$(":checked").parent().remove();
 	});
 	
+// Funzioni sul singolo post-it
+	$('.remove').click(function(){
+		$(this).parent().parent().remove();
+	});
+	$('.move').click(function(){
+		$(this).parent().parent().draggable();
+	});
 	// --Fine funzioni utente
 });

@@ -35,21 +35,21 @@ button{margin-left:5px;}
 .element {
 	background-color: #dddddd;
 	border-radius: 3px;
-display:inline-block;
-width:198px;
-height:150px;
-border: 1px dotted #bbbbbb;
-position:absolute;
+	display:inline-block;
+	width:198px;
+	height:150px;
+	border: 1px dotted #bbbbbb;
+	position:absolute;
 }
-.element input { 
+.bar {
+	border-bottom: 1px dotted #bbbbbb;
+	height: 20px;
+}
+.move, .color, .remove {
 	float: left;
-	margin: 5px;
-}
-.post {
-	margin-left: 5px;
-	margin-top: 10px;
 }
 .date {
+	float: right;
 	text-align: right;
 	font-size: 0.5em;
 }
