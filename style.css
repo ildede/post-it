@@ -6,48 +6,29 @@ body {
 	font-family: Verdana, Arial;
 	color: #181818;
 }
+button {float:right;}
 
-/* Titolo e parte per gestire il programma */
-.header {
-	width:200px;
-	height: 100%;
-	font-family: Georgia;
-	background-color: #df0000;
-	color: #e3e3e3;
-	margin: 0px;
-	padding: 0px;
-	position:absolute;
-	top:0;
-	bottom:0;
-}
-h1{margin:5px;}
-textarea{
-	margin:5px;
-	max-width:180px;
-}
-button{margin-left:5px;}
-
-/* CONTAINER e relativi div figli */
-#container {
-	margin-left:200px;
-	position:relative;
-}
 .element {
 	background-color: #dddddd;
 	border-radius: 3px;
 	display:inline-block;
 	width:198px;
-	height:150px;
+	height:198px;
 	border: 1px dotted #bbbbbb;
-	position:absolute;
 }
+
 .bar {
 	border-bottom: 1px dotted #bbbbbb;
 	height: 20px;
 }
-.move, .color, .remove {
+
+.move, .stop, .color, .remove {
 	float: left;
 }
+.stop {
+	display: none;
+}
+
 .date {
 	float: right;
 	text-align: right;

@@ -1,39 +1,25 @@
-function createElement(text) {
-	var newDiv = "<div class='element'></div>";
-	var check = "<input type='checkbox' />";
-	var post = "<div class='post'></div>";
-	post = $(post).html(text);
-	var d = new Date();
-	var date = "<div class='date'></div>";
-	date = $(date).html( d.getHours()+":"+d.getMinutes()+"<br />"+d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear() );
-	newDiv= $(newDiv).append(check).append(date).append(post);
-	newDiv.draggable();
-	
-	return newDiv;
-};
-
 $(document).ready(function(){
 			
-	//Funzioni utilizzabili dall'utente
-	$('#add').click(function(){
-		if ($('#item_to_add').val() != "") {
-			var text = $('#item_to_add').val();
-			$('#item_to_add').val("");
-			var newDiv = createElement(text);
-			$('#container').append(newDiv);
-		}
+$('#add').click(function(){
+	$('#container').append('<div class="element"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="date">07:30<br />03/08/1987</div></div><div class="post">Post di test</div></div>');
+});
+	// Funzioni sul singolo post-it
+
+$('#container').on('click','.move', function(){
+		$(this).parent().parent().draggable({disabled:false});
+		$(this).hide();
+		$(this).next().show();
 	});
-	
-	$("#rem").click(function(){
-		$(":checked").parent().remove();
+
+$('#container').on('click','.stop', function(){
+		$(this).parent().parent().draggable({disabled:true});
+		$(this).hide();
+		$(this).prev().show();
 	});
-	
-// Funzioni sul singolo post-it
-	$('.remove').click(function(){
+
+$('#container').on('click','.remove', function(){
 		$(this).parent().parent().remove();
 	});
-	$('.move').click(function(){
-		$(this).parent().parent().draggable();
-	});
+
 	// --Fine funzioni utente
 });
