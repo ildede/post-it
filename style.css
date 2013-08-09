@@ -34,3 +34,15 @@ button {float:right;}
 	text-align: right;
 	font-size: 0.5em;
 }
+
+.color1 {
+	background-color:blue;
+}
+
+.color2 {
+	background-color:yellow;
+}
+
+.color3 {
+	background-color:red;
+}

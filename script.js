@@ -21,5 +21,18 @@ $('#container').on('click','.remove', function(){
 		$(this).parent().parent().remove();
 	});
 
+$('#container').on('click','.color',function(){
+		var $element = $(this).parent().parent();
+		if ($element.hasClass('color1') ) {
+			$element.removeClass('color1')
+				.addClass('color2');
+		} else if ($element.hasClass('color2') ) {
+			$element.removeClass('color2')
+				.addClass('color3');
+		} else {
+			$element.removeClass('color3')
+				.addClass('color1');
+		};
+	});
 	// --Fine funzioni utente
 });
