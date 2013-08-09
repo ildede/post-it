@@ -17,6 +17,10 @@ $('#container').on('click','.stop', function(){
 		$(this).prev().show();
 	});
 
+$('#container').on('click','.color', function(){
+		$(this).parent().parent().css("background-color","blue");
+});
+
 $('#container').on('click','.remove', function(){
 		$(this).parent().parent().remove();
 	});
