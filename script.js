@@ -1,7 +1,7 @@
 $(document).ready(function(){
 			
 $('#add').click(function(){
-	$('#container').append('<div class="element"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="date">07:30<br />03/08/1987</div></div><div class="post">Post di test</div></div>');
+	$('#container').append('<div class="element color1"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="date">07:30<br />03/08/1987</div></div><div class="post">Post di test</div></div>');
 });
 	// Funzioni sul singolo post-it
 
@@ -33,6 +33,11 @@ $('#container').on('click','.color',function(){
 			$element.removeClass('color3')
 				.addClass('color1');
 		};
+	});
+
+$('#container').on('click','.modify',function(){
+		var text = prompt('Scrivi il testo del post-it');
+		$(this).prev().html(text);
 	});
 	// --Fine funzioni utente
 });
