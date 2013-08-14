@@ -1,7 +1,17 @@
 $(document).ready(function(){
+
+$('#save').click(function(){
+	if (typeof(Storage)!=="undefined") {
+		alert('ok!');
+	} else {
+		alert('Il tuo browser non supporta il local storage');
+	};
+});
+
 $('#add').click(function(){
 	$('#container').append('<div class="element color1"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="date">07:30<br />03/08/1987</div></div><div class="post">Post di test</div><div class="modify">MOD</div></div>');
 });
+
 	// Funzioni sul singolo post-it
 
 $('#container').on('click','.move', function(){
