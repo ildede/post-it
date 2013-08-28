@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	var container = localStorage.getItem("container");
+	$('#container').html(container);
+
 $('#save').click(function(){
 	var element = $('.post').html();
 	if (typeof(Storage)!=="undefined") {
