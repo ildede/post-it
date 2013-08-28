@@ -5,14 +5,14 @@ $('#save').click(function(){
 	if (typeof(Storage)!=="undefined") {
 		//salvataggio di tutta la parte html all'interno del container
 		var container = $('#container').html();
-		sessionStorage.setItem("container",container);
+		localStorage.setItem("container",container);
 	} else {
 		alert('Il tuo browser non supporta il local storage');
 	};
 });
 
 $('#restore').click(function(){
-	var container = sessionStorage.getItem("container");
+	var container = localStorage.getItem("container");
 	$('#container').html(container);
 });
 
