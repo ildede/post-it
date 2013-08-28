@@ -1,21 +1,19 @@
-function savethis(text,n) {
-	var name = "post"+n;
-	sessionStorage.setItem(name, text);
-};
-
 $(document).ready(function(){
 
 $('#save').click(function(){
 	var element = $('.post').html();
 	if (typeof(Storage)!=="undefined") {
-		$('.post').each(savethis(this,1)); //il this in questo modo si riferisce a [object HTMLButtonElement]
+		//salvataggio di tutta la parte html all'interno del container
+		var container = $('#container').html();
+		sessionStorage.setItem("container",container);
 	} else {
 		alert('Il tuo browser non supporta il local storage');
 	};
 });
 
 $('#restore').click(function(){
-	alert("elementi salvati = " + sessionStorage.getItem("post1"));
+	var container = sessionStorage.getItem("container");
+	$('#container').html(container);
 });
 
 $('#add').click(function(){
