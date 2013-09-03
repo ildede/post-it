@@ -15,6 +15,7 @@ button {float:right;}
 	width:198px;
 	height:198px;
 	border: 1px dotted #bbbbbb;
+	position: absolute;
 }
 
 .bar {
