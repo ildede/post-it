@@ -29,7 +29,7 @@ $('#show').click(function(){
 //});
 
 $('#add').click(function(){
-	$('#container').append('<div class="element color1"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="modify">MOD</div><div class="date">07:30<br />03/08/1987</div></div><div class="post">Post di test</div></div>');
+	$('#container').append('<div class="element color1"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="modify">M</div></div><div class="post">Post di test</div></div>');
 });
 
 	// Funzioni sul singolo post-it
@@ -66,7 +66,8 @@ $('#container').on('click','.color',function(){
 	});
 
 $('#container').on('click','.modify',function(){
-		var text = prompt('Scrivi il nuovo testo per il post-it');
+		var now = $(this).parent().next().html();
+		var text = prompt(now);
 		$(this).parent().next().html(text);
 	});
 	// --Fine funzioni utente

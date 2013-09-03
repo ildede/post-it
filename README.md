@@ -9,7 +9,7 @@ Funzioni attuali:
 - Elimina il post-it
 - Testo modificabile
 - Salvataggio e ripristino post-it ---salvataggio manuale, ripristino automatico all'apertura
-- Barra di gestione unica del post-it, possibilmente a scomparsa
+- Barra di gestione unica del post-it, a scomparsa tramite pulsante globale.
 
 Funzioni da aggiungere:
 - Scelta del colore e non cambio ciclico.
