@@ -25,6 +25,11 @@ button {float:right;}
 .move, .stop, .color, .remove {
 	float: left;
 }
+
+.modify {
+	float:right;
+}
+
 .stop {
 	display: none;
 }
@@ -46,8 +51,3 @@ button {float:right;}
 .color3 {
 	background-color:red;
 }
-
-.modify {
-	float:right;
-}
-

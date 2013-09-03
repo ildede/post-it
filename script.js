@@ -14,13 +14,22 @@ $('#save').click(function(){
 	};
 });
 
-$('#restore').click(function(){
-	var container = localStorage.getItem("container");
-	$('#container').html(container);
+$('#hide').click(function(){
+	$('.bar').hide();	
 });
 
+$('#show').click(function(){
+	$('.bar').show();	
+});
+
+//   La funzione di restore da pulsante, attualmente rimossa visto che viene attivata all'apertura della pagina
+//$('#restore').click(function(){
+//	var container = localStorage.getItem("container");
+//	$('#container').html(container);
+//});
+
 $('#add').click(function(){
-	$('#container').append('<div class="element color1"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="date">07:30<br />03/08/1987</div></div><div class="post">Post di test</div><div class="modify">MOD</div></div>');
+	$('#container').append('<div class="element color1"><div class="bar"><div class="move">M</div><div class="stop">S</div><div class="color">C</div><div class="remove">R</div><div class="modify">MOD</div><div class="date">07:30<br />03/08/1987</div></div><div class="post">Post di test</div></div>');
 });
 
 	// Funzioni sul singolo post-it
@@ -57,8 +66,8 @@ $('#container').on('click','.color',function(){
 	});
 
 $('#container').on('click','.modify',function(){
-		var text = prompt('Scrivi il testo del post-it');
-		$(this).prev().html(text);
+		var text = prompt('Scrivi il nuovo testo per il post-it');
+		$(this).parent().next().html(text);
 	});
 	// --Fine funzioni utente
 });
